@@ -6,11 +6,14 @@ function login() {
         document.getElementById("error").innerHTML =
             "Please enter your name!";
     }
+
     else if (!/^[A-Za-z ]+$/.test(name)) {
         document.getElementById("error").innerHTML =
             "Please enter a valid name!";
     }
+
     else {
-        window.location.href = "welcome.html?name=" + encodeURIComponent(name);
+        window.location.href =
+            "Validation.html?name=" + encodeURIComponent(name);
     }
 }
