@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome</title>
+</head>
+
+<body>
+
+    <h1 id="message"></h1>
+
+    <script>
+        let params = new URLSearchParams(window.location.search);
+        let name = params.get("name");
+
+        document.getElementById("message").innerHTML =
+            "Hello, " + name + "!";
+    </script>
+
+</body>
+
+</html>
